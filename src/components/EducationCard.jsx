@@ -1,0 +1,35 @@
+import React from "react";
+import {
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+
+const EducationCard = ({ education }) => {
+  return (
+    <VerticalTimelineElement
+      contentStyle={{
+        background: "#1d1836",
+        color: "#fff",
+      }}
+      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+      date={education.date}
+      iconStyle={{ background: "#00b0ff" }}
+      icon={
+        <div className='flex justify-center items-center w-full h-full'>
+          {/* You can add an icon here if you have one for education */}
+        </div>
+      }
+    >
+      <div>
+        <h3 className='text-white text-[24px] font-bold'>{education.title}</h3>
+        <p
+          className='text-secondary text-[16px] font-semibold'
+          style={{ margin: 0 }}
+        >
+          {education.company_name}
+        </p>
+      </div>
+    </VerticalTimelineElement>
+  );
+};
+
+export default EducationCard; 
