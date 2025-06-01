@@ -195,17 +195,27 @@ const education = [
     title: "B.Tech in Computer Science Engineering",
     company_name: "B. V. Raju Institute of Technology, Narsapur",
     date: "2023 - Present",
+    points: [
+      "CGPA: 9.74"
+    ]
   },
   {
     title: "Intermediate - MPC",
     company_name: "IIIT Rgukt Basar",
     date: "2021-2023",
+    points: [
+      "CGPA: 9.43"
+    ]
   },
   {
     title: "10th - ICSE",
     company_name: "Sri Sai Public School, Patancheru",
     date: "2017-2021",
+    points: [
+      "Percentage: 96.5%"
+    ]
   },
 ];
+
 
 export { services, technologies, projects, education };
